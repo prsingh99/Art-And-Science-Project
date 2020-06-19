@@ -1,16 +1,44 @@
 h1 {
-    color: slategray;
     text-align: center;
-    margin-top: 10px;
+    margin : 0 auto 0 auto;
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
-    font-size: 70px;
     background-color: black;
   }
   #page-header{
-    max-width: 1000px;
-    margin: 0 auto 0 auto
+    max-width: 90%;
+    margin: 0 auto 10px auto
   }
+  /* for the title animation */
+  #text1{
+    color: snow;
+    font-size: 90px;
+    letter-spacing: 40px;
+    animation: text 5s 1;
+    position: relative;
+  }
+  #text2{
+    font-size: 70px;
+    color: slategray
+  }
+  /* for the title animation */
+  @keyframes text{
+    0%{
+      color: black;
+      margin-bottom: -80px;
+    }
+    30%{
+      letter-spacing: 70px;
+      margin-bottom: -80px;
+
+    }
+    85%{
+      letter-spacing: 40px;
+      margin-bottom: -80px;
+    }
+
+  }
+
   .container {
     max-width: 880px;
     padding-top: 7px auto 7px auto;
@@ -18,7 +46,7 @@ h1 {
   } 
   .border {
     max-width: 900px;
-    margin: 0 auto 0 auto;
+    margin: 20px auto 0 auto;
     background-color: black;
   
   }
