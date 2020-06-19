@@ -1,0 +1,29 @@
+h1 {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .container {
+    max-width: 880px;
+    padding-top: 7px auto 7px auto;
+    margin: 0 auto 0 auto
+  } 
+  .border {
+    max-width: 900px;
+    margin: 0 auto 0 auto;
+    background-color: black;
+  
+  }
+  .image {
+    margin: 7px 7px 3px 7px ;
+    opacity: 1;
+    width: 48%;
+    height: 60%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .image:hover{
+    opacity: 0.4;
+  }
+  
