@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .parallax1 {
+    background-image: url("/images/infinite_time1.jpg");
+    min-height: 100vh;
+    display: block;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  }
+  
+  .parallax2 {
+    background-image: url("/images/infinite_time2.jpg");
+  
+    min-height: 70vh;
+    display: block;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    font: arial;
+  }
+  
+  .parallax3 {
+    background-image: url("/images/infinite_time3.jpg");
+  
+    min-height: 70vh;
+    display: block;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+  .parallax4 {
+    background-image: url("/images/infinite_time4.jpg");
+  
+    min-height: 100vh;
+    display: block;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  button{
+    color:cornsilk;
+    font-family:fantasy;
+  }
+
+  h2{
+    text-align: center;
+    margin : 0 auto 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-size: 40px;
+    }
+
+  .polling_message {
+    color: white;
+    float: right;
+    margin-right: 55%;
+  }
+ 
+  
+  .view_port {
+    background-color:black;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+  }
+
+  
+  .cylon_eye {
+    background-color: rgb(72, 119, 207);
+    background-image: linear-gradient(to right,
+        rgba(0, 0, 0, .9) 25%,
+        rgba(18, 157, 182, 0.1) 50%,
+        rgba(0, 0, 0, .9) 75%);
+    color: white;
+    height: 100%;
+    width: 20%;
+  
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+            animation: 4s linear 0s infinite alternate move_eye;
+  }
+
+  a {
+    text-decoration: none;
+    color:beige
+  }
+  a:hover {
+    color: maroon;
+  }
+  .button {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+   
+  }
+  .port {
+    height: 500px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    text-align: center;
+  }
+  .heading{
+    max-width: 100%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    height: 250px;
+  }
+  /* for the title animation */
+  #text1{
+    color: black;
+    font-size: 70px;
+    letter-spacing: 40px;
+    margin-top: 20px;
+  }
+  #text2{
+    font-size: 60px;
+    color: navy;
+  }
+  @-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+          @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+
+</style>
+</head>
+<body>
+<div class= parallax1></div>
+<div class= parallax2></div>
+<div class= parallax3></div>
+<div class= parallax4></div>
+<div class= parallax5></div>
+<div class= parallax6></div>
+
+<div class="text">
+  <div class="view_port">
+    <div class="polling_message">
+      <h2><a class="button" href="/index.html"> HOMEPAGE</a></h2>
+    </div>
+    <div class="cylon_eye"></div>
+  </div>
+</div>
+<div class =  "port">
+  <div class = "heading">
+    <h1 id = "text1">INFINITE MOMENT IN TIME</h1>
+    <h1 id= "text2">FABIAN OEFNER</h1>
+  </div>
+</body>
+</html>
